@@ -46,13 +46,13 @@ Run o2dll with the given arguments.  It will die if there is a failure.
 sub o2dll
 {
   msys {
-    system('sh', File::Spec->catfile(dist_dir('Alien-o2dll'), qw( bin o2dll )), @_);
+    system('sh', File::Spec->catfile(dist_dir('Alien-o2dll'), qw( bin o2dll.sh )), @_);
     if($? == -1) {
       die "failed to execute: $!";
     } elsif($? & 127) {
       die sprintf("child died with signal %d", $? & 127);
     } elsif($?) {
-      die "child exited with value %d", $? >> 8;
+      die sprintf("child exited with value %d", $? >> 8);
     }
   };
 }
