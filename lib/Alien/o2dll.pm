@@ -7,7 +7,7 @@ use Alien::MSYS;
 use base qw( Exporter );
 use File::Spec;
 
-our @EXPOR_OK = qw( o2dll o2dll_path );
+our @EXPORT_OK = qw( o2dll o2dll_path );
 
 # ABSTRACT: Make dynamic link library
 # VERSION
@@ -28,7 +28,7 @@ From command line:
 
 o2dll is a shell script that is used in some build scripts used to create DLL files
 on Windows.  Installing this module provides a perl interface to that command, as 
-well as a command line interface C<po2dll> (it has a p prefix so as not to interfear 
+well as a command line interface C<po2dll> (it has a p prefix so as not to interfere
 with o2dll if you have installed it yourself).
 
 =head1 FUNCTIONS

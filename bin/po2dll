@@ -3,3 +3,19 @@
 use strict;
 use warnings;
 use Alien::o2dll qw( o2dll );
+
+# PODNAME: po2dll
+# ABSTRACT: Make dynamic link library
+# VERSION
+
+=head1 SEE ALSO
+
+=over 4
+
+=item L<Alien::o2dll>
+
+=back
+
+=cut
+
+o2dll(@ARGV);
