@@ -45,8 +45,9 @@ Run o2dll with the given arguments.  It will die if there is a failure.
 
 sub o2dll
 {
+  my @args = @_;
   msys {
-    system('sh', File::Spec->catfile(dist_dir('Alien-o2dll'), qw( bin o2dll.sh )), @_);
+    system('sh', File::Spec->catfile(dist_dir('Alien-o2dll'), qw( bin o2dll.sh )), @args);
     if($? == -1) {
       die "failed to execute: $!";
     } elsif($? & 127) {
