@@ -1,0 +1,5 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use Alien::o2dll qw( o2dll );
