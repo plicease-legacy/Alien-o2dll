@@ -1,4 +1,4 @@
-package Alien::o2dll::ModuleBuild;
+package My::ModuleBuild;
 
 use strict;
 use warnings;
