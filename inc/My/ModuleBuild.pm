@@ -9,7 +9,11 @@ sub new
   my $class = shift;
   my %args = @_;
   
-  die "operating system no supported" unless $^O eq 'MSWin32' || $^O eq 'cygwin';
+  unless($^O eq 'MSWin32' || $^O eq 'cygwin')
+  {
+    warn "operating system no supported";
+    exit;
+  }
   
   $class->SUPER::new(%args);
 }
