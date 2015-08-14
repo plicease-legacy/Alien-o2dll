@@ -6,6 +6,8 @@ pod_spelling_system:
     - dll
     - DLL
     - po
+    - po2dll
+    - o2dll
 
 pod_coverage:
   # format is "Class#method" or "Class", regex allowed

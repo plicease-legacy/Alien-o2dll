@@ -9,7 +9,7 @@ sub new
   my $class = shift;
   my %args = @_;
   
-  unless($^O eq 'MSWin32' || $^O eq 'cygwin')
+  unless($^O eq 'MSWin32' || $^O eq 'cygwin' || $ENV{ALIEN_O2DLL_ANYWAY})
   {
     warn "operating system no supported";
     exit;
