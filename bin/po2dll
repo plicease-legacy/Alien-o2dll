@@ -5,8 +5,16 @@ use warnings;
 use Alien::o2dll qw( o2dll );
 
 # PODNAME: po2dll
-# ABSTRACT: Make dynamic link library
+# ABSTRACT: Make dynamic link library on Windows (Deprecated)
 # VERSION
+
+=head1 DESCRIPTION
+
+B<Note>: The idea was that I (or someone else) might end up using this somewhere else.
+I didn't realize that libbz2 was special, and that there are better ways of doing
+this.  Please consider using L<Alien::MSYS> or C<libtool> or something like that.
+
+For details, please see L<Alien::o2dll>.
 
 =head1 SEE ALSO
 
