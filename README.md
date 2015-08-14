@@ -1,6 +1,6 @@
 # Alien::o2dll
 
-Make dynamic link library
+Make dynamic link library on Windows (Deprecated)
 
 # SYNOPSIS
 
@@ -15,6 +15,10 @@ From command line:
     C:\> po2dll -o foo.dll -l otherlib foo.o -version-info 0:0:0
 
 # DESCRIPTION
+
+**Note**: The idea was that I (or someone else) might end up using this somewhere else.
+I didn't realize that libbz2 was special, and that there are better ways of doing
+this.  Please consider using [Alien::MSYS](https://metacpan.org/pod/Alien::MSYS) or `libtool` or something like that.
 
 o2dll is a shell script that is used in some build scripts used to create DLL files
 on Windows.  Installing this module provides a perl interface to that command, as 

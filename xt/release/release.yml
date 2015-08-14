@@ -8,6 +8,7 @@ pod_spelling_system:
     - po
     - po2dll
     - o2dll
+    - libbz2
 
 pod_coverage:
   # format is "Class#method" or "Class", regex allowed

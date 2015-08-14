@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - officially marking as deprecated
 
 0.03      2014-11-10 06:12:28 -0500
   - exit instead of die in Build.PL on bad platforms

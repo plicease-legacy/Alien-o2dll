@@ -9,7 +9,7 @@ use File::Spec;
 
 our @EXPORT_OK = qw( o2dll o2dll_path );
 
-# ABSTRACT: Make dynamic link library
+# ABSTRACT: Make dynamic link library on Windows (Deprecated)
 # VERSION
 
 =head1 SYNOPSIS
@@ -25,6 +25,10 @@ From command line:
  C:\> po2dll -o foo.dll -l otherlib foo.o -version-info 0:0:0
 
 =head1 DESCRIPTION
+
+B<Note>: The idea was that I (or someone else) might end up using this somewhere else.
+I didn't realize that libbz2 was special, and that there are better ways of doing
+this.  Please consider using L<Alien::MSYS> or C<libtool> or something like that.
 
 o2dll is a shell script that is used in some build scripts used to create DLL files
 on Windows.  Installing this module provides a perl interface to that command, as 
